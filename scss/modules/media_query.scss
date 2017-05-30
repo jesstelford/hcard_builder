@@ -1,0 +1,49 @@
+@media (max-width: 766px) {
+  body{
+    width:95%;
+    margin: 0 auto;
+  }
+  .button{
+    max-width:150px;
+    font-size:1em;
+  }
+  #main_form{
+    h1{
+      margin-top:0;
+      padding-top:1em;
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+    display:flex;
+  }
+  #main_form{
+    section{
+      display:flex;
+      flex-wrap:wrap;
+      ul{
+        display:flex;
+        flex-wrap:wrap;
+        flex:1 0 100%;
+        li{
+          flex:1 0 50%;
+        }
+      }
+    }
+    .button_section{
+      span{
+        flex:1 0 250px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1340px) {
+  body{
+    width:70%;
+  }
+}

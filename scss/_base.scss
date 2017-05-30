@@ -1,0 +1,53 @@
+/*------
+base styles
+---------------*/
+*{
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+body{
+	font-size:$base__font-size;
+	font-family:$font-family--primary;
+  margin:0;
+  padding:0;
+  background:$black;
+}
+
+body>section{
+  flex:1;
+}
+
+h1,h2,h3{
+  margin:0;
+  padding:0;
+}
+
+h2{
+	font-family:$font-family--secondary;
+	font-weight:$font-weight--thin;
+}
+
+.button{
+  color: $white;
+  padding: .5em 0.5em;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 1.25em;
+  overflow:hidden;
+  width:100%;
+  max-width:200px;
+  font-weight:$font-weight--light;
+  margin-bottom:.5em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li{
+    list-style:none;
+  }
+}

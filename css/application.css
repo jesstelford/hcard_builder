@@ -1,0 +1,196 @@
+/*-------------------------------
+Global Config
+--------------------------------*/
+/*------
+variables
+---------------*/
+/*------
+base styles
+---------------*/
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #000; }
+
+body > section {
+  flex: 1; }
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0; }
+
+h2 {
+  font-family: "PT Serif", serif;
+  font-weight: 100; }
+
+.button {
+  color: #fff;
+  padding: .5em 0.5em;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 1.25em;
+  overflow: hidden;
+  width: 100%;
+  max-width: 200px;
+  font-weight: 300;
+  margin-bottom: .5em; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
+/*------
+main form
+---------------*/
+#main_form {
+  padding-bottom: 1em;
+  background: #fff;
+  padding-left: 1em; }
+  #main_form h1 {
+    font-weight: 900;
+    margin: 1em 0;
+    font-size: 1.75em; }
+  #main_form h2 {
+    text-transform: uppercase;
+    font-size: 0.75em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid #ccc;
+    width: 97%;
+    color: #ccc;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #758e9d; }
+  #main_form section ul li {
+    margin-bottom: 1em; }
+    #main_form section ul li label {
+      display: block;
+      text-transform: uppercase;
+      font-weight: 100;
+      font-size: 0.85em; }
+  #main_form input:not([type="submit"]):not([type="button"]):not([type="file"]) {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0.1em 0.5em;
+    font-size: 1em;
+    text-decoration: none;
+    line-height: 2em;
+    height: 2em;
+    max-height: 3em;
+    margin-bottom: .5em;
+    border-radius: 4px;
+    width: 95%; }
+  #main_form input[type="file"] {
+    display: none; }
+  #main_form #button_submit, #main_form #button_file {
+    background: #3fa9e2;
+    border: 0; }
+    #main_form #button_submit:hover, #main_form #button_file:hover {
+      background: #1f91cf; }
+  #main_form #button_file {
+    background: #758e9d; }
+    #main_form #button_file:hover {
+      background: #475a65; }
+
+#preview_section {
+  background: #e7e9ec;
+  display: flex;
+  padding-top: 2em; }
+  #preview_section .wrapper {
+    width: 80%;
+    margin: 0px auto; }
+  #preview_section h2 {
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 0.95em;
+    margin-bottom: 0.25em;
+    color: #758192;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #preview_section h3 {
+    background-color: #394f63;
+    padding: 3em 0.5em 0.5em 0.5em;
+    position: relative;
+    color: #fff;
+    font-family: "PT Serif", serif; }
+    #preview_section h3 label {
+      font-size: 1.5em;
+      font-weight: 700; }
+    #preview_section h3 img {
+      position: absolute;
+      right: .5em;
+      top: 1em;
+      height: 105px;
+      width: 82px; }
+  #preview_section ul {
+    background: #fff;
+    padding: 1.5em 1em 1em; }
+    #preview_section ul li {
+      text-transform: uppercase;
+      font-size: 0.75em;
+      margin-bottom: 1em;
+      border-bottom: 1px solid #ccc;
+      font-weight: 300; }
+      #preview_section ul li label {
+        font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        min-width: 80px;
+        display: inline-block; }
+      #preview_section ul li span#email_preview {
+        text-transform: lowercase; }
+      #preview_section ul li span {
+        font-family: "PT Serif", serif;
+        text-transform: capitalize;
+        font-size: 1.3em; }
+        #preview_section ul li span::before {
+          content: "";
+          padding-left: .5em; }
+    #preview_section ul li:last-child {
+      display: flex;
+      margin-bottom: 1em; }
+      #preview_section ul li:last-child > section {
+        flex: 1 0 50%; }
+
+@media (max-width: 766px) {
+  body {
+    width: 95%;
+    margin: 0 auto; }
+  .button {
+    max-width: 150px;
+    font-size: 1em; }
+  #main_form h1 {
+    margin-top: 0;
+    padding-top: 1em; } }
+
+@media (min-width: 767px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+    display: flex; }
+  #main_form section {
+    display: flex;
+    flex-wrap: wrap; }
+    #main_form section ul {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1 0 100%; }
+      #main_form section ul li {
+        flex: 1 0 50%; }
+  #main_form .button_section span {
+    flex: 1 0 250px; } }
+
+@media (min-width: 1340px) {
+  body {
+    width: 70%; } }
+
+/*# sourceMappingURL=application.css.map */
